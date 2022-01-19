@@ -15,17 +15,17 @@
   "license": "Unlicense",
   "dependencies": {
     "@mapbox/geojson-area": "^0.2.2",
-    "@mapbox/tilebelt": "^1.0.1",
+    "@mapbox/tilebelt": "^1.0.2",
     "better-queue": "^3.8.10",
     "byline": "^5.0.0",
-    "cli-spinner": "^0.2.8",
-    "config": "^3.0.1",
+    "cli-spinner": "^0.2.10",
+    "config": "^3.3.7",
     "hh-mm-ss": "^1.2.0",
-    "hjson": "^3.1.2",
-    "json-text-sequence": "^0.1.1",
-    "pg": "^7.8.0",
+    "hjson": "^3.2.2",
+    "json-text-sequence": "^1.0.0",
+    "pg": "^8.7.1",
     "prettysize": "^2.0.0",
-    "winston": "^3.2.0",
-    "winston-daily-rotate-file": "^3.6.0"
+    "winston": "^3.4.0",
+    "winston-daily-rotate-file": "^4.5.5"
   }
 }
