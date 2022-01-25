@@ -113,6 +113,9 @@ const lut = {
       minzoom: 3,
       maxzoom: 5
     }
+  if (f.properties.gridcode == 20) {
+  f.tippecanoe.minzoom = 2
+  }
   if (f.properties.gridcode == 20 || f.properties.gridcode == 30) {
     delete f.properties['objectid']
     delete f.properties['objectid_1']
