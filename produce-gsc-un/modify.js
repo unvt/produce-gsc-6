@@ -134,12 +134,12 @@ const lut = {
     }
     f.properties._source = 'c'
     delete f.properties['objectid']
-  if (f.properties.type == '3') {
+  if (f.properties.type == 3) {
     f.tippecanoe.minzoom = 6
-    f.properties.bdytyp = '6'
-  } else if (f.properties.type == '4') {
+    f.properties.bdytyp = 6
+  } else if (f.properties.type == 4) {
     f.tippecanoe.minzoom = 7
-    f.properties.bdytyp = '7'
+    f.properties.bdytyp = 7
   } else {
     f.tippecanoe.minzoom = 6
     f.properties.bdytyp = f.properties.type
@@ -154,15 +154,15 @@ const lut = {
     }
     f.properties._source = 'mik'
     delete f.properties['objectid']
-  if (f.properties.type == '2') {
+  if (f.properties.type == 2) {
     f.tippecanoe.minzoom = 7
-    f.properties.bdytyp = '7'
-  } else if (f.properties.type === '3') {
+    f.properties.bdytyp = 7
+  } else if (f.properties.type === 3) {
     f.tippecanoe.minzoom = 9
-    f.properties.bdytyp = '10' //tentatively
+    f.properties.bdytyp = 10 //tentatively
   } else {
     f.tippecanoe.minzoom = 7
-    f.properties.bdytyp = '99' //other
+    f.properties.bdytyp = 99 //other
   }
     delete f.properties['type']
     return f
@@ -174,12 +174,12 @@ const lut = {
     }
     f.properties._source = 'vmc'
     delete f.properties['objectid']
-  if (f.properties.level == '7') {
+  if (f.properties.level == 7) {
     f.tippecanoe.minzoom = 7
-    f.properties.bdytyp = '7'
-  } else if (f.properties.level == '10') {
+    f.properties.bdytyp = 7
+  } else if (f.properties.level == 10) {
     f.tippecanoe.minzoom = 9
-    f.properties.bdytyp = '10'
+    f.properties.bdytyp = 10
   } else {
     f.tippecanoe.minzoom = 6
     f.properties.bdytyp = f.properties.level
