@@ -143,7 +143,7 @@ const lut = {
     delete f.properties['objectid']
     delete f.properties['iso3cd']
   //no need admin 1 and 2 for ZL5 
-  if (f.properties.bdytyp === '6' ||f.properties.bdytyp === '7') {
+  if (f.properties.bdytyp == 6 ||f.properties.bdytyp == 7) {
     return null
   } else {
     return f
@@ -158,7 +158,7 @@ const lut = {
     delete f.properties['objectid']
     delete f.properties['iso3cd']
   //no need admin 1 and 2 for small scale
-  if (f.properties.bdytyp === '6' || f.properties.bdytyp === '7') {
+  if (f.properties.bdytyp == 6 || f.properties.bdytyp == 7) {
     return null
   } else {
     return f
@@ -173,7 +173,7 @@ const lut = {
     delete f.properties['objectid']
     delete f.properties['iso3cd']
   //no need admin 1 and 2 for small scale
-  if (f.properties.bdytyp === '6' || f.properties.bdytyp === '7') {
+  if (f.properties.bdytyp == 6 || f.properties.bdytyp == 7) {
     return null
   } else {
     return f
