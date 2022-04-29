@@ -777,7 +777,7 @@ const lut = {
   landuse_parkreserve_a: f => {
     f.tippecanoe = {
       layer: 'area_park',
-      minzoom: 7,
+      minzoom: 8,
       maxzoom: 15
     }
     delete f.properties['class']
