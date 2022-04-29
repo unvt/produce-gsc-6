@@ -57,21 +57,28 @@ const flap = (f, defaultZ) => {
 const minzoomRoad = (f) => {
   switch (f.properties.z_order) {
     case 1:
-    case 2:
     case 3:
-    case 4:
-      return 6
     case 5:
+      return 6
+    case 7:
       return 7
     case 9:
     case 10:
       return 8
+    case 2:
+    case 4:
     case 6:
-    case 7:
     case 8:
       return 9
     case 11:
     case 12:
+    case 23:
+    case 24:
+    case 25:
+    case 26:
+    case 27:
+    case 28:
+    case 29:
       return 10
     case 13:
       return 11
