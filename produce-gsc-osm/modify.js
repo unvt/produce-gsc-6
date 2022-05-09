@@ -138,6 +138,19 @@ const minzoomRoad = (f) => {
 }
 */
 
+//new 
+const minzoomRail = (f) => {
+  switch (f.properties.z_order) {
+    case 1:
+      return 10
+    case 2:
+    case 3:
+      return 11
+    default:
+      return 13
+  }
+}
+
 const minzoomWater = (f) => {
   if (f.properties.fclass === 'water') {
     return 6
@@ -380,7 +393,7 @@ const lut = {
   railways_all_l: f => {
     f.tippecanoe = {
       layer: 'railway',
-      minzoom: 9,
+      minzoom: minzoomRail(f), //modified on 2022-05-09
       maxzoom: 15
     }
     delete f.properties['traction']
