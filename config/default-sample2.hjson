@@ -1,0 +1,1068 @@
+{
+un-s: { 
+  Z: 0
+  relations: [
+   un_base::vectortile::custom_planet_land_08_a
+   un_base::vectortile::un_glc30_global_lc_ss_a
+   un_base::vectortile::unmap_bndl_l
+   un_base::vectortile::unmap_bndl05_l
+   un_base::vectortile::unmap_bndl25_l
+   un_base::vectortile::custom_ne_rivers_lakecentrelines_l
+   un_base::vectortile::unmap_wbya10_a
+   un_base::vectortile::unmap_bnda_label_03_p
+   un_base::vectortile::unmap_bnda_label_04_p
+   un_base::vectortile::unmap_bnda_label_05_p
+   un_base::vectortile::unmap_bnda_label_06_p
+   un_base::vectortile::unmap_phyp_label_04_p
+   un_base::vectortile::unmap_phyp_label_06_p
+   un_base::vectortile::unmap_phyp_p
+   un_base::vectortile::unmap_popp_p
+   ]
+  mbtilesDir: produce-gsc-small/un-s-tile
+  propertyBlacklist: [
+    description
+    fid
+    fid_1
+    globalid
+    id
+    objectid_1
+    osm_id
+    pseudoarea
+  ]
+  conversionTilelist: [
+  0-0-0
+  ]
+ }
+osm-s: {
+  Z: 0
+  relations: [
+   osm_planet::vectortile::roads_major_0408_l 
+   ]
+  mbtilesDir: produce-gsc-small/osm-s-tile
+  propertyBlacklist: [
+    description
+    fid
+    fid_1
+    globalid
+    id
+    objectid_1
+    osm_id
+    pseudoarea
+  ]
+  conversionTilelist: [
+  0-0-0
+  ]
+}
+un-l: {
+  host: localhost
+  Z: 6
+  concurrent: 6
+  port: 5432
+  dbUser: postgress
+  dbPassword: ABCDEFG
+  relations: [
+    un_base::vectortile::custom_planet_land_main_a
+    un_base::vectortile::custom_planet_land_antarctica_a
+    un_base::vectortile::custom_planet_land_08_a
+    un_base::vectortile::unmap_bndl_l
+    un_base::vectortile::custom_unmap_bndl_l
+    un_base::vectortile::un_unmik_bndl_l
+    un_base::vectortile::un_unvmc_igac_bndl_l
+    un_base::vectortile::custom_ne_rivers_lakecentrelines_l
+    un_base::vectortile::un_glc30_global_lc_ms_a
+    un_base::vectortile::un_mission_lc_ls_a
+    un_base::vectortile::un_global_places_p
+    un_base::vectortile::unmap_phyp_label_06_p
+    un_base::vectortile::unmap_bnda_a1_ap
+    un_base::vectortile::unmap_bnda_a2_ap
+    un_base::vectortile::custom_unmap_bnda_a1_ap
+    un_base::vectortile::custom_unmap_bnda_a2_ap
+    un_base::vectortile::un_unmik_bnda_a2_ap
+    un_base::vectortile::un_unmik_bnda_a3_ap
+    un_base::vectortile::un_unvmc_igac_bnda_a1_departments_ap
+    un_base::vectortile::un_unvmc_igac_bnda_a2_municipalities_ap
+    un_base::vectortile::un_unvmc_igac_bnda_a3_rural_units_ap
+    un_base::vectortile::unmap_bnda05_cty_a
+    un_base::vectortile::unmap_bnda_label_06_p
+    un_base::vectortile::un_global_pois_p
+    un_base::vectortile::un_minusca_pois_p
+    un_base::vectortile::unmap_phyp_p
+    un_base::vectortile::unmap_popp_p
+    un_base::vectortile::custom_planet_coastline_l
+   ]
+  mbtilesDir: produce-gsc-un/mbtiles/un_tile
+  propertyBlacklist: [
+    description
+    fid
+    fid_1
+    globalid
+    id
+    pseudoarea
+  ]
+}
+osm-l: {
+  host: localhost
+  Z: 6
+  concurrent: 6
+  concurrentE: 6
+  port: 5432
+  dbUser: postgress
+  dbPassword: ABCDEFG
+  relations: [
+osm_planet::vectortile::ferries_all_l              
+osm_planet::vectortile::landuse_naturallarge_a     
+osm_planet::vectortile::landuse_naturalmedium_a    
+osm_planet::vectortile::landuse_parkreserve_a      
+osm_planet::vectortile::landuse_urban_a                     
+osm_planet::vectortile::places_all_p               
+osm_planet::vectortile::pois_heritage_ap           
+osm_planet::vectortile::pois_heritage_p            
+osm_planet::vectortile::pois_other_ap              
+osm_planet::vectortile::pois_other_p               
+osm_planet::vectortile::pois_public_ap             
+osm_planet::vectortile::pois_public_p              
+osm_planet::vectortile::pois_services_ap           
+osm_planet::vectortile::pois_services_p            
+osm_planet::vectortile::pois_traffic_p             
+osm_planet::vectortile::pois_transport_a           
+osm_planet::vectortile::pois_transport_ap          
+osm_planet::vectortile::pois_transport_p           
+osm_planet::vectortile::pois_water_p               
+osm_planet::vectortile::pois_worship_ap            
+osm_planet::vectortile::pois_worship_p             
+osm_planet::vectortile::railways_all_l             
+osm_planet::vectortile::roads_special_l                
+osm_planet::vectortile::roads_major_l              
+osm_planet::vectortile::roads_medium_l    
+osm_planet::vectortile::roads_minor_l              
+osm_planet::vectortile::roads_other_l              
+osm_planet::vectortile::runways_all_l              
+osm_planet::vectortile::water_all_a                
+osm_planet::vectortile::waterways_large_l          
+osm_planet::vectortile::waterways_small_l
+osm_planet::vectortile::buildings_a   
+  ]
+  mbtilesDir: produce-gsc-osm/mbtiles/osm_tile
+  mbtilesDir_every: produce-gsc-osm/mbtiles/osm_tile_every
+  mbtilesDir_day01: produce-gsc-osm/mbtiles/osm_tile_day01
+  mbtilesDir_day02: produce-gsc-osm/mbtiles/osm_tile_day02
+  mbtilesDir_day03: produce-gsc-osm/mbtiles/osm_tile_day03
+  mbtilesDir_day04: produce-gsc-osm/mbtiles/osm_tile_day04
+  mbtilesDir_day05: produce-gsc-osm/mbtiles/osm_tile_day05
+  mbtilesDir_day06: produce-gsc-osm/mbtiles/osm_tile_day06
+  mbtilesDir_day07: produce-gsc-osm/mbtiles/osm_tile_day07
+  propertyBlacklist: [
+    description
+    fid
+    fid_1
+    globalid
+    id
+    objectid_1
+    osm_id
+    pseudoarea
+  ]
+}
+  clearmap: {
+  Z: 0
+  relations: [
+    un_base::vectortile::custom_planet_land_08_a  
+    un_base::vectortile::custom_planet_ocean_08_a
+    un_base::vectortile::un_glc30_global_lc_ss_a
+    un_base::vectortile::unmap_bndl_l
+    un_base::vectortile::unmap_bndl05_l
+    un_base::vectortile::unmap_bndl25_l
+    un_base::vectortile::unmap_bnda_cty_anno_03_p
+    un_base::vectortile::unmap_bnda_cty_anno_04_p
+    un_base::vectortile::unmap_bnda_cty_anno_05_p
+    un_base::vectortile::unmap_bnda_cty_anno_06_p
+    un_base::vectortile::unmap_phyp_label_04_p
+    un_base::vectortile::unmap_phyp_label_06_p
+    un_base::vectortile::unmap_popp_p
+    un_base::vectortile::unmap_wbya10_a
+    un_base::vectortile::unmap_dral10_l
+    un_base::vectortile::custom_ne_10m_bathymetry_a
+  ]
+  mbtilesDir: produce-clearmap/clearmaptile
+  propertyBlacklist: [
+    description
+    fid
+    fid_1
+    globalid
+    id
+    objectid_1
+    osm_id
+    pseudoarea
+  ]
+  conversionTilelist: [
+  0-0-0
+  ]
+  }
+  wtpsThreshold: 50
+  monitorPeriod: 10
+  concurrentS: 1
+  maxRetries: 5
+  retryDelay: 5000
+  logDir: log
+  defaultDate: 2022-08-20
+  spinnerString: 18
+  fetchSize: 30000
+  tippecanoePath: /usr/local/bin/tippecanoe
+  everydayTilelist: [
+6-36-21
+6-36-22
+6-37-21
+6-37-22
+6-37-23
+6-38-21
+6-38-22
+6-38-23
+5-14-13
+5-14-14
+5-15-13
+5-16-13
+5-17-13
+5-17-14
+5-18-13
+5-18-14
+5-19-14
+5-20-14
+5-20-15
+5-21-12
+5-21-13
+6-18-30
+6-18-31
+6-18-32
+6-19-29
+6-19-30
+6-19-31
+6-19-32
+6-30-28
+6-30-29
+6-30-30
+6-31-28
+6-31-29
+6-31-30
+6-32-28
+6-32-29
+6-33-25
+6-34-25
+6-34-30
+6-34-31
+6-34-32
+6-34-33
+6-35-23
+6-35-25
+6-35-30
+6-35-31
+6-35-32
+6-35-33
+6-36-25
+6-36-30
+6-36-31
+6-36-32
+6-36-33
+6-36-34
+6-37-25
+6-37-30
+6-37-31
+6-37-32
+6-37-33
+6-37-34
+6-38-25
+6-38-26
+6-38-30
+6-38-31
+6-39-24
+6-39-25
+6-39-26
+6-39-30
+6-39-31
+6-39-32
+6-40-25
+6-40-26
+6-44-24
+6-44-25
+6-44-26
+6-45-24
+6-45-25
+  ]
+  day01Tilelist: [
+5-20-8
+5-21-11
+5-21-14
+5-21-15
+5-21-8
+5-22-11
+5-22-8
+5-22-9
+5-23-11
+5-23-12
+5-23-15
+5-23-8
+5-23-9
+6-32-24
+6-32-25
+6-32-30
+6-32-31
+6-33-24
+6-33-28
+6-33-29
+6-33-30
+6-33-31
+6-34-24
+6-35-24
+6-36-16
+6-36-17
+6-36-18
+6-36-19
+6-36-20
+6-36-23
+6-36-24
+6-37-16
+6-37-17
+6-37-18
+6-37-19
+6-37-20
+6-37-24
+6-38-16
+6-38-17
+6-38-18
+6-38-19
+6-38-20
+6-38-24
+6-38-27
+6-39-16
+6-39-17
+6-39-18
+6-39-19
+6-39-20
+6-39-21
+6-39-22
+6-39-23
+6-39-27
+6-40-18
+6-40-19
+6-40-20
+6-40-21
+6-40-22
+6-40-23
+6-40-24
+6-40-27
+6-41-18
+6-41-19
+6-41-20
+6-41-21
+6-41-22
+6-41-23
+6-41-24
+6-41-25
+6-41-26
+6-41-27
+6-42-18
+6-42-19
+6-42-20
+6-42-21
+6-43-18
+6-43-19
+6-43-20
+6-43-21
+6-44-20
+6-44-21
+6-44-27
+6-44-28
+6-44-29
+6-44-30
+6-44-31
+6-45-20
+6-45-21
+6-45-26
+6-45-27
+6-45-28
+6-45-29
+6-45-30
+6-45-31
+6-46-20
+6-46-21
+6-46-26
+6-46-27
+6-46-28
+6-46-29
+6-47-20
+6-47-21
+6-47-26
+6-47-27
+6-47-28
+6-47-29
+  ]
+  day02Tilelist: [
+4-14-7
+4-15-4
+4-15-5
+4-15-6
+4-15-7
+4-15-8
+5-24-10
+5-24-11
+5-24-12
+5-24-16
+5-24-17
+5-24-8
+5-24-9
+5-25-10
+5-25-11
+5-25-17
+5-25-8
+5-25-9
+5-26-10
+5-26-11
+5-26-17
+5-26-8
+5-26-9
+5-27-10
+5-27-13
+5-27-14
+5-27-16
+5-27-17
+5-27-8
+5-27-9
+5-28-10
+5-28-13
+5-28-16
+5-28-17
+5-28-8
+5-28-9
+5-29-10
+5-29-11
+5-29-12
+5-29-13
+5-29-16
+5-29-17
+5-29-8
+5-29-9
+6-48-26
+6-48-27
+6-48-28
+6-48-29
+6-48-30
+6-48-31
+6-49-26
+6-49-27
+6-49-28
+6-49-29
+6-49-30
+6-49-31
+6-50-24
+6-50-25
+6-50-26
+6-50-27
+6-50-28
+6-50-29
+6-50-30
+6-50-31
+6-50-32
+6-50-33
+6-51-24
+6-51-25
+6-51-26
+6-51-27
+6-51-28
+6-51-29
+6-51-30
+6-51-31
+6-51-32
+6-51-33
+6-52-24
+6-52-25
+6-52-26
+6-52-27
+6-52-28
+6-52-29
+6-52-30
+6-52-31
+6-52-32
+6-52-33
+6-53-24
+6-53-25
+6-53-26
+6-53-27
+6-53-28
+6-53-29
+6-53-30
+6-53-31
+6-53-32
+6-53-33
+6-54-22
+6-54-23
+6-54-24
+6-54-25
+6-54-30
+6-54-31
+6-55-22
+6-55-23
+6-55-24
+6-55-25
+6-55-30
+6-55-31
+6-56-22
+6-56-23
+6-56-24
+6-56-25
+6-57-22
+6-57-23
+6-57-24
+6-57-25
+  ]
+  day03Tilelist: [
+6-32-16
+6-32-17
+6-32-18
+6-32-19
+6-32-20
+6-32-21
+6-32-22
+6-32-23
+6-33-16
+6-33-17
+6-33-18
+6-33-19
+6-33-20
+6-33-21
+6-33-22
+6-33-23
+6-34-16
+6-34-17
+6-34-18
+6-34-19
+6-34-20
+6-34-21
+6-34-22
+6-34-23
+6-35-16
+6-35-17
+6-35-18
+6-35-19
+6-35-20
+6-35-21
+6-35-22
+  ]
+  day04Tilelist: [
+4-5-6
+4-6-4
+4-6-5
+4-6-6
+4-6-7
+4-7-8
+5-10-14
+5-10-15
+5-10-16
+5-10-8
+5-10-9
+5-11-10
+5-11-11
+5-11-14
+5-11-15
+5-11-16
+5-11-8
+5-11-9
+5-13-16
+5-13-17
+5-14-10
+5-14-11
+5-14-12
+5-14-15
+5-14-8
+5-14-9
+5-15-8
+5-8-15
+5-8-16
+5-8-17
+5-8-8
+5-8-9
+5-9-13
+5-9-8
+5-9-9
+6-16-20
+6-16-21
+6-16-22
+6-16-23
+6-16-24
+6-16-25
+6-16-26
+6-16-27
+6-16-28
+6-16-29
+6-17-20
+6-17-21
+6-17-22
+6-17-23
+6-17-24
+6-17-25
+6-17-26
+6-17-27
+6-17-28
+6-17-29
+6-18-20
+6-18-21
+6-18-22
+6-18-23
+6-18-24
+6-18-25
+6-18-28
+6-18-29
+6-18-33
+6-18-34
+6-18-35
+6-19-20
+6-19-21
+6-19-22
+6-19-23
+6-19-24
+6-19-25
+6-19-28
+6-19-33
+6-19-34
+6-19-35
+6-20-20
+6-20-21
+6-20-22
+6-20-23
+6-20-34
+6-20-35
+6-21-20
+6-21-21
+6-21-22
+6-21-23
+6-21-34
+6-21-35
+6-22-34
+6-22-35
+6-23-34
+6-23-35
+6-24-32
+6-24-33
+6-24-34
+6-24-35
+6-25-32
+6-25-33
+6-25-34
+6-25-35
+6-30-18
+6-30-19
+6-30-20
+6-30-21
+6-30-22
+6-30-23
+6-30-24
+6-30-25
+6-30-31
+6-31-18
+6-31-19
+6-31-20
+6-31-21
+6-31-22
+6-31-23
+6-31-24
+6-31-25
+6-31-31
+  ]
+  day05Tilelist: [
+4-0-10
+4-0-11
+4-0-12
+4-0-13
+4-0-14
+4-0-15
+4-0-5
+4-0-6
+4-0-7
+4-0-8
+4-0-9
+4-1-10
+4-1-11
+4-1-12
+4-1-13
+4-1-14
+4-1-15
+4-1-5
+4-1-6
+4-1-7
+4-2-10
+4-2-11
+4-2-12
+4-2-13
+4-2-14
+4-2-15
+4-2-7
+4-2-8
+4-2-9
+4-3-10
+4-3-11
+4-3-12
+4-3-13
+4-3-14
+4-3-15
+4-3-8
+4-3-9
+5-0-8
+5-0-9
+5-1-8
+5-1-9
+5-2-16
+5-2-17
+5-2-18
+5-2-19
+5-2-8
+5-2-9
+5-3-16
+5-3-17
+5-3-18
+5-3-19
+5-3-8
+5-3-9
+5-4-11
+5-4-12
+5-4-13
+5-4-8
+5-5-13
+5-5-8
+5-6-14
+5-6-15
+5-6-8
+5-6-9
+5-7-15
+5-7-8
+5-7-9
+6-10-18
+6-10-19
+6-10-20
+6-10-21
+6-10-22
+6-10-23
+6-10-24
+6-10-25
+6-11-18
+6-11-19
+6-11-20
+6-11-21
+6-11-22
+6-11-23
+6-11-24
+6-11-25
+6-12-20
+6-12-21
+6-12-22
+6-12-23
+6-12-24
+6-12-25
+6-12-26
+6-12-27
+6-13-20
+6-13-21
+6-13-22
+6-13-23
+6-13-24
+6-13-25
+6-13-26
+6-13-27
+6-14-20
+6-14-21
+6-14-22
+6-14-23
+6-14-24
+6-14-25
+6-14-26
+6-14-27
+6-14-28
+6-14-29
+6-15-20
+6-15-21
+6-15-22
+6-15-23
+6-15-24
+6-15-25
+6-15-26
+6-15-27
+6-15-28
+6-15-29
+6-8-18
+6-8-19
+6-8-20
+6-8-21
+6-9-18
+6-9-19
+6-9-20
+6-9-21
+  ]
+  day06Tilelist: [
+4-10-10
+4-10-11
+4-10-12
+4-10-9
+4-11-10
+4-11-11
+4-11-12
+4-11-8
+4-11-9
+4-12-10
+4-12-11
+4-12-12
+4-12-9
+4-13-10
+4-13-11
+4-13-12
+4-14-11
+4-14-12
+4-15-11
+4-15-12
+4-4-11
+4-4-12
+4-5-12
+4-6-10
+4-6-12
+4-6-9
+4-7-10
+4-7-11
+4-7-12
+4-7-9
+4-8-10
+4-8-11
+4-8-12
+4-9-10
+4-9-11
+4-9-12
+5-10-20
+5-10-21
+5-10-22
+5-10-23
+5-11-19
+5-11-20
+5-11-21
+5-11-22
+5-11-23
+5-12-22
+5-12-23
+5-13-22
+5-13-23
+5-16-16
+5-16-17
+5-16-18
+5-16-19
+5-17-17
+5-17-18
+5-17-19
+5-18-19
+5-19-18
+5-19-19
+5-20-16
+5-21-16
+5-21-17
+5-26-18
+5-26-19
+5-27-18
+5-27-19
+5-28-18
+5-28-20
+5-28-21
+5-29-20
+5-29-21
+5-30-18
+5-30-19
+5-30-20
+5-30-21
+5-31-18
+5-31-21
+5-8-18
+5-8-19
+5-8-20
+5-8-21
+5-9-18
+5-9-20
+5-9-21
+6-18-38
+6-18-39
+6-19-38
+6-19-39
+6-20-36
+6-20-37
+6-20-38
+6-20-39
+6-21-36
+6-21-37
+6-21-38
+6-21-39
+6-22-36
+6-22-37
+6-23-36
+6-23-37
+6-36-35
+6-36-36
+6-36-37
+6-37-35
+6-37-36
+6-37-37
+6-38-32
+6-38-33
+6-38-34
+6-38-35
+6-39-33
+6-39-34
+6-39-35
+6-40-34
+6-40-35
+6-41-34
+6-41-35
+6-56-38
+6-56-39
+6-57-38
+6-57-39
+6-58-36
+6-58-37
+6-58-38
+6-58-39
+6-59-36
+6-59-37
+6-59-38
+6-59-39
+6-62-38
+6-62-39
+6-62-40
+6-62-41
+6-63-38
+6-63-39
+6-63-40
+6-63-41
+  ]
+  day07Tilelist: [
+4-0-0
+4-0-1
+4-0-2
+4-0-3
+4-1-0
+4-10-0
+4-10-1
+4-10-13
+4-10-14
+4-10-15
+4-10-2
+4-10-3
+4-1-1
+4-11-0
+4-11-1
+4-11-13
+4-11-14
+4-11-15
+4-11-2
+4-11-3
+4-1-2
+4-12-0
+4-12-1
+4-12-13
+4-12-14
+4-12-15
+4-12-2
+4-12-3
+4-1-3
+4-13-0
+4-13-1
+4-13-13
+4-13-14
+4-13-15
+4-13-2
+4-13-3
+4-14-0
+4-14-1
+4-14-13
+4-14-14
+4-14-15
+4-14-2
+4-14-3
+4-15-0
+4-15-1
+4-15-13
+4-15-14
+4-15-15
+4-15-2
+4-15-3
+4-2-0
+4-2-1
+4-2-2
+4-2-3
+4-3-0
+4-3-1
+4-3-2
+4-3-3
+4-4-0
+4-4-1
+4-4-13
+4-4-14
+4-4-15
+4-4-2
+4-4-3
+4-5-0
+4-5-15
+4-5-3
+4-6-0
+4-6-13
+4-6-14
+4-6-15
+4-7-0
+4-7-1
+4-7-13
+4-7-14
+4-7-15
+4-7-2
+4-7-3
+4-8-0
+4-8-1
+4-8-13
+4-8-14
+4-8-15
+4-8-2
+4-9-0
+4-9-1
+4-9-13
+4-9-14
+4-9-15
+5-10-2
+5-10-26
+5-10-27
+5-10-28
+5-10-29
+5-10-3
+5-10-4
+5-10-5
+5-11-2
+5-11-26
+5-11-27
+5-11-28
+5-11-29
+5-11-3
+5-11-4
+5-11-5
+5-12-2
+5-12-3
+5-12-4
+5-12-5
+5-12-6
+5-12-7
+5-13-2
+5-13-3
+5-13-4
+5-13-5
+5-13-6
+5-13-7
+5-16-6
+5-16-7
+5-17-6
+5-17-7
+5-18-4
+5-18-5
+5-18-6
+5-18-7
+5-19-4
+5-19-5
+5-19-6
+5-19-7
+  ]
+}
+

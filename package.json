@@ -1,0 +1,31 @@
+{
+  "name": "produce-gsc-6",
+  "version": "1.0.0",
+  "description": "produce-gsc version 6 - For the production env",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unvt/produce-gsc-6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Unlicense",
+  "dependencies": {
+    "@mapbox/geojson-area": "^0.2.2",
+    "@mapbox/tilebelt": "^1.0.2",
+    "better-queue": "^3.8.10",
+    "byline": "^5.0.0",
+    "cli-spinner": "^0.2.10",
+    "config": "^3.3.7",
+    "hh-mm-ss": "^1.2.0",
+    "hjson": "^3.2.2",
+    "json-text-sequence": "^1.0.0",
+    "pg": "^8.7.1",
+    "prettysize": "^2.0.0",
+    "winston": "^3.4.0",
+    "winston-daily-rotate-file": "^4.5.5"
+  }
+}
