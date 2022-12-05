@@ -348,6 +348,64 @@ const lut = {
    } 
     return f
   },
+  unmap_bnda_cty_anno_03_p: f => {
+    f.tippecanoe = {
+      layer: 'lab_cty',
+      minzoom: 1,
+      maxzoom: 2
+    }
+    if(f.properties.annotationclassid == 2){
+      f.properties.labtyp = 5 // NSG
+    } else if (f.properties.annotationclassid == 5) {
+      f.properties.labtyp = 2 //SG
+    } else {
+      f.properties.labtyp = f.properties.annotationclassid
+    }
+   if (f.properties.status == 1) {
+     return null
+   } else {
+     return f
+   }
+  },
+  unmap_bnda_cty_anno_04_p: f => {
+    f.tippecanoe = {
+      layer: 'lab_cty',
+      minzoom: 3,
+      maxzoom: 3
+    }
+    f.properties.labtyp = f.properties.annotationclassid
+   if (f.properties.status == 1) {
+     return null
+   } else {
+     return f
+   }
+  },
+  unmap_bnda_cty_anno_05_p: f => {
+    f.tippecanoe = {
+      layer: 'lab_cty',
+      minzoom: 4,
+      maxzoom: 4
+    }
+    f.properties.labtyp = f.properties.annotationclassid
+   if (f.properties.status == 1) {
+     return null
+   } else {
+     return f
+   }
+  },
+  unmap_bnda_cty_anno_06_p: f => {
+    f.tippecanoe = {
+      layer: 'lab_cty',
+      minzoom: 5,
+      maxzoom: 5
+    }
+    f.properties.labtyp = f.properties.annotationclassid
+   if (f.properties.status == 1) {
+     return null
+   } else {
+     return f
+   }
+  },
   unmap_phyp_label_04_p: f => {
     f.tippecanoe = {
       layer: 'lab_water',

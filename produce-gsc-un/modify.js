@@ -405,6 +405,19 @@ f.properties.display = 1
     }
     return f
   },
+  unmap_bnda_cty_anno_06_p: f => {
+    f.tippecanoe = {
+      layer: 'lab_cty',
+      minzoom: 6,
+      maxzoom: 11
+    }
+    f.properties.labtyp = f.properties.annotationclassid
+   if (f.properties.status == 1) {
+     return null
+   } else {
+     return f
+   }
+  },
   // 9. POIs
   un_minusca_pois_p: f => {
     f.tippecanoe = {
