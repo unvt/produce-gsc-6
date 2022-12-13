@@ -477,12 +477,22 @@ const lut = {
       minzoom: 4,
       maxzoom: 4
     }
+    if (f.properties.status == 1) {
+      return null
+    } else {
+      return f
+    }
   },
   unmap_wbya_label_06_p: f => {
     f.tippecanoe = {
       layer: 'lab_inwater',
       minzoom: 5,
       maxzoom: 5
+    }
+    if (f.properties.status == 1) {
+      return null
+    } else {
+      return f
     }
   },
   unmap_dral10_l: f => {
