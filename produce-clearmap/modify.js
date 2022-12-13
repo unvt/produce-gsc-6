@@ -471,6 +471,20 @@ const lut = {
     delete f.properties['lengthcalc']
     return f
   },
+  unmap_wbya_label_05_p: f => {
+    f.tippecanoe = {
+      layer: 'lab_inwater',
+      minzoom: 4,
+      maxzoom: 4
+    }
+  },
+  unmap_wbya_label_06_p: f => {
+    f.tippecanoe = {
+      layer: 'lab_inwater',
+      minzoom: 5,
+      maxzoom: 5
+    }
+  },
   unmap_dral10_l: f => {
     f.tippecanoe = {
       layer: 'dral10',

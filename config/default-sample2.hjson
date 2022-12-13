@@ -181,6 +181,8 @@ osm_planet::vectortile::buildings_a
     un_base::vectortile::unmap_wbya10_a
     un_base::vectortile::unmap_dral10_l
     un_base::vectortile::custom_ne_10m_bathymetry_a
+    un_base::vectortile::unmap_wbya_label_05_p
+    un_base::vectortile::unmap_wbya_label_06_p
   ]
   mbtilesDir: produce-clearmap/clearmaptile
   propertyBlacklist: [
