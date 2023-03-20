@@ -68,6 +68,7 @@ un-l: {
     un_base::vectortile::custom_unmap_bndl_l
     un_base::vectortile::un_unmik_bndl_l
     un_base::vectortile::un_unvmc_igac_bndl_l
+    un_base::vectortile::un_mimu_bndl
     un_base::vectortile::custom_ne_rivers_lakecentrelines_l
     un_base::vectortile::un_glc30_global_lc_ms_a
     un_base::vectortile::un_mission_lc_ls_a

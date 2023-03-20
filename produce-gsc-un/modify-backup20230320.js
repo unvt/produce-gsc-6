@@ -120,10 +120,7 @@ const lut = {
   } else {
     f.tippecanoe.minzoom = 6
   }
-  var remove1 = 'COL'
-  var remove2 = 'MMR'
-  if (f.properties.iso3cd.match(remove1) ||f.properties.iso3cd.match(remove2) ) {
-//  if (f.properties.iso3cd == 'COL' || f.properties.iso3cd == 'COL_ECU' || f.properties.iso3cd == 'COL_PER' || f.properties.iso3cd == 'COL_VEN' || f.properties.iso3cd == 'BRA_COL' || f.properties.iso3cd == 'COL_PAN' || f.properties.iso3cd == 'COL_PAN') {
+  if (f.properties.iso3cd == 'COL' || f.properties.iso3cd == 'COL_ECU' || f.properties.iso3cd == 'COL_PER' || f.properties.iso3cd == 'COL_VEN' || f.properties.iso3cd == 'BRA_COL' || f.properties.iso3cd == 'COL_PAN') {
     return null
   } else {
     delete f.properties['iso3cd'] //added on September 16
@@ -167,38 +164,6 @@ const lut = {
     f.tippecanoe.minzoom = 7
     f.properties.bdytyp = 99 //other
   }
-    delete f.properties['type']
-    return f
-  },
-  un_mimu_bndl: f => {
-    f.tippecanoe = {
-      layer: 'bndl',
-      minzoom: 6,
-      maxzoom: 15
-    }
-    f.properties._source = 'mmr'
-    delete f.properties['objectid']
-//change here
-  if (f.properties.boundary_type == 'International boundary') {
-    f.tippecanoe.minzoom = 6
-    f.properties.bdytyp = 1
-  } else if (f.properties.boundary_type == 'Administrative boundary 1') {
-    f.tippecanoe.minzoom = 7
-    f.properties.bdytyp = 7 
-  } else if (f.properties.boundary_type == 'Administrative boundary 2') {
-    f.tippecanoe.minzoom = 9
-    f.properties.bdytyp = 10 //tentatively
-  } else if (f.properties.boundary_type == 'Administrative boundary 3') {
-    f.tippecanoe.minzoom = 11
-    f.properties.bdytyp = 10 //tentatively
-  } else if (f.properties.boundary_type == 'Administrative boundary 4') {
-    f.tippecanoe.minzoom = 13
-    f.properties.bdytyp = 11 //tentatively
-  } else {
-    f.tippecanoe.minzoom = 13
-    f.properties.bdytyp = 99 //other
-  }
-// until here
     delete f.properties['type']
     return f
   },
