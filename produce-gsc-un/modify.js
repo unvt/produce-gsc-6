@@ -120,10 +120,10 @@ const lut = {
   } else {
     f.tippecanoe.minzoom = 6
   }
-  var remove1 = 'COL'
-  var remove2 = 'MMR'
-  if (f.properties.iso3cd.match(remove1) ||f.properties.iso3cd.match(remove2) ) {
-//  if (f.properties.iso3cd == 'COL' || f.properties.iso3cd == 'COL_ECU' || f.properties.iso3cd == 'COL_PER' || f.properties.iso3cd == 'COL_VEN' || f.properties.iso3cd == 'BRA_COL' || f.properties.iso3cd == 'COL_PAN' || f.properties.iso3cd == 'COL_PAN') {
+//  var remove1 = 'COL'
+//  var remove2 = 'MMR'
+//  if (f.properties.iso3cd.match(remove1) || f.properties.iso3cd.match(remove2) ) {
+  if (f.properties.iso3cd == 'COL' || f.properties.iso3cd == 'COL_ECU' || f.properties.iso3cd == 'COL_PER' || f.properties.iso3cd == 'COL_VEN' || f.properties.iso3cd == 'BRA_COL' || f.properties.iso3cd == 'COL_PAN' || f.properties.iso3cd == 'COL_PAN' || f.properties.iso3cd == 'BGD_MMR' || f.properties.iso3cd == 'CHN_MMR' || f.properties.iso3cd == 'IND_MMR' || f.properties.iso3cd == 'LAO_MMR' || f.properties.iso3cd == 'MMR' || f.properties.iso3cd == 'MMR_THA') {
     return null
   } else {
     delete f.properties['iso3cd'] //added on September 16
