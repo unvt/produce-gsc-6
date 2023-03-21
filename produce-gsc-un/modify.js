@@ -184,10 +184,10 @@ const lut = {
     f.properties.bdytyp = 1
   } else if (f.properties.boundary_type == 'Administrative boundary 1') {
     f.tippecanoe.minzoom = 7
-    f.properties.bdytyp = 7 
+    f.properties.bdytyp = 6
   } else if (f.properties.boundary_type == 'Administrative boundary 2') {
     f.tippecanoe.minzoom = 9
-    f.properties.bdytyp = 10 //tentatively
+    f.properties.bdytyp = 7 //tentatively
   } else if (f.properties.boundary_type == 'Administrative boundary 3') {
     f.tippecanoe.minzoom = 11
     f.properties.bdytyp = 10 //tentatively
