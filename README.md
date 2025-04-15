@@ -24,7 +24,7 @@ Then, conduct the scripts.
 
 
 # memo
-the following tiles are tentatively move to the everyday list. (config/default-sample2.hjson)
+The following tiles were tentatively moved to the everyday list (config/default-sample2.hjson), but we have reverted to using the original list instead.
  * 6-36-21
  * 6-36-22
  * 6-37-21
